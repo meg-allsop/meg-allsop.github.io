@@ -73,6 +73,7 @@ ul {
   right: -828px;
 }
 footer {
+  display: flex-start;
 }
 
 /*-----------------------------------

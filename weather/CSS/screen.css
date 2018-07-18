@@ -1,0 +1,209 @@
+/* CSS for Screened Devices 
+
+*  Stylesheet for Screened Devices
+*  Created by: Meg Allsop
+*  
+*  1.  Includes (fonts and supplementary stylesheets)
+*     1 Normalize
+
+*     2 Google fonts
+*
+*  2.  General Styles (for all pages and devices)
+*
+*  3.  Mobile First (styles specific to small screens)
+*
+*  4.  Large Screen Styles (Media Queries begin here)
+
+
+
+*/
+
+/*1.  Includes (fonts and supplementary stylesheets)
+*       1.1 Normalize*/
+
+@import 'normalize.css';
+
+/*      1.2 Google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Sansita");
+
+/* 2. General Rules that apply to all devices  */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sansita, Eurostyle, sans-serif;
+}
+
+selector {
+    property: value;
+}
+
+.tile {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+/*Navigation Bar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/*Make the logo and title brand on one line*/
+
+header {
+    display: flex;
+}
+
+/*Background pictures for mobile summary*/
+
+.clear {
+    background-image: url("..images/weather-images/clear-450.jpg")
+}
+
+/*Make logo and brand bigger*/
+
+div#logo {
+    font-size: 80px;
+}
+
+#site-brand {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+/**/
+
+#curWeather {
+     background-image: url('../Images/weather-images/clear.jpg');
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-size: cover; 
+}
+
+/*Given Size to boxes*/
+
+#temps,
+#wind {
+    width: 28%;
+}
+
+#summary {
+    width: 40%;
+}
+
+/*adding some  padding in the weather boxes*/
+
+#temps,
+#wind,
+#summary {
+    padding: 10px;
+
+}
+
+#hourly ul {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+#hourly ul li {
+    min-width: 110px;
+    min-height: 30px;
+    background-color: beige;
+}
+
+@media only screen and (max-width:600px) {
+
+    /* 1. Mobile First Rules */
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    footer {
+        margin-bottom: 2.5em;
+
+    }
+    #hourly {
+        display: flex;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    #hourly ul li {
+        min-width: 110px;
+    }
+    #site-brand {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    #curWeather {
+        background-image: url('../Images/weather-images/clear-small.jpg');
+        display: flex;
+        flex-direction: column;
+    }
+    #curWeather > section {
+        width: 50%;
+    }
+    #temps > h2,
+    #wind > h2 {
+        display: none;
+    }
+    #curWeather {
+        background-size: cover;
+    }
+
+    /* Background pictures for summary */
+    .clear {
+        background-image: url("/weather/images/clear_small.jpg");
+    }
+}

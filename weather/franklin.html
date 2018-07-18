@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Franklin | The Weather Site | Keywords</title>
+    <meta name="description" content="Short Description of the page.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="CSS/screen.css" media="screen">
+
+    <script src="js/play.js"></script>
+    <script src="JavaScript/functions.js"></script>
+
+</head>
+
+<body>
+    <header id="page-header">
+        <div id="logo">&#9748;</div>
+        <p id="site-brand">The Weather Site</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" title="Go to home page">Current</a></li>
+            <li><a href="#" title="Go to Search Page">Search</a></li>
+            <li><a href="#" title="Go to Franklin Page">Franklin</a></li>
+            <li><a href="greenville.html" title="Go to Greenville Page">Greenville</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="locName">Franklin, Idaho</h1>
+        <!-- locInfo holds zip, elevation, longitude and latitude -->
+        <section id="locInfo">
+            <p><strong>Zip:</strong>83237 |<strong>Elevation:</strong>4968 ft. |<strong>Location:</strong>111.79, 42.07</p>
+        </section>
+        <!-- curWeather holds temps, wind and summary data -->
+        <div id="curWeather">
+            <section id="temps" class="tile rain">
+                <h2>Temperature</h2>
+                <p>
+                    <font size="16">55&deg;F</font>
+                </p>
+                <p>
+                    <font color="red">64F</font>
+                    <font color="blue"> 41F</font>
+                    <p>
+
+
+                        <p>Feels like 21F</p>
+            </section>
+            <section id="wind" class="tile">
+                <h2>Wind</h2>
+                <img src="Images/weather-images/wind-pointer.png">
+                <p><strong>Direction:</strong> SW</p>
+                <p><strong>Gusts:</strong> 5mph</p>
+            </section>
+            <section id="summary" class="tile">
+                <h2>Sunny</h2>
+                <video poster="Images/weather-images/video.png"></video>
+
+                <!--<button onclick="getCondition()"></button>-->
+
+            </section>
+        </div>
+        <section id="hourly">
+            <h2><strong>Hourly Forcast</strong></h2>
+            <ul>
+                <li> 12am: 41F |</li>
+                <li> 1am:41F |</li>
+                <li> 2am: 41F |</li>
+                <li> 3am: 41F |</li>
+                <li> 4am: 41F |</li>
+                <li> 5am: 41F |</li>
+                <li> 6am: 42F | </li>
+                <li> 7am: 44F |</li>
+                <li> 8am: 44F | </li>
+                <li> 9am: 46F |</li>
+                <li> 10am: 49F |</li>
+                <li> 11am: 51F |</li>
+                <li> 12am: 55F |</li>
+                <li> 1pm: 58F | </li>
+                <li> 2pm: 62F |</li>
+                <li> 3pm: 64F |</li>
+                <li> 4pm: 64F |</li>
+                <li> 5pm: 62F |</li>
+                <li> 6pm: 61F |</li>
+                <li> 7pm: 60F |</li>
+                <li> 8pm: 59F |</li>
+                <li> 9pm: 58F |</li>
+                <li> 10pm: 52F |</li>
+                <li> 11pm: 48F |</li>
+            </ul>
+        </section>
+        <!--<div id="curWeather">
+            <div id="smallConditions">
+                <section id="temps">...</section>
+                <section id="wind">...</section>
+            </div>
+            <section id="video">...</section>
+        </div> -->
+    </main>
+    <footer>
+        &copy;2018 Meg Allsop
+    </footer>
+    <script src="/weather/js/functions.js"></script>
+</body> 
+
+</html>

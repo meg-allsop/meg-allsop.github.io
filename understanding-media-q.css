@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Site</title>
+    <meta name="description" content="understanding media queries.">
+    <meta name="viewport" content="width=device-width">
+    <style>
+      
+        body {
+            background-color: #cc33ff;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: yellowgreen;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Media Query</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Purpose</h2>
+                <p>A media query helps you adapt your site to the proper value or size  of different  
+    devices characteristics and parameters.</p>
+
+               
+            </section>
+    </main>
+    <footer>
+        &copy;2018 Megan Allsop
+    </footer>
+</body>
+
+</html>

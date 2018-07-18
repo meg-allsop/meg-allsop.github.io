@@ -1,0 +1,77 @@
+/* CSS part for screened devices
+* Created by: Meg Allsop 
+* 1. Fonts
+* 2. General Styles 
+* 3. Mobile First
+* 4. Large Screen  */
+
+/*-----------------------------------
+*  Small Screen 
+----------------------------------*/
+
+/* Google Font Roboto */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background-image: url("../images/site/background.jpg");
+  background-size: auto;
+  background-repeat: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+#whitebox {
+  background-color: white;
+  width: 84%;
+  margin: auto;
+}
+header {
+  display: flex-start;
+}
+
+#site-brand {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+main {
+  align-content: stretch;
+}
+h1 {
+  color: #990033;
+  font-size: 1.5 em;
+}
+ul {
+  color: #990033;
+  font-size: 1 em;
+}
+
+#feature {
+  width: 100%;
+  margin: auto;
+}
+#featureblock {
+  position: relative;
+}
+#featurerocket {
+  position: absolute;
+  top: 55px;
+  right: 58px;
+}
+#iwant {
+  position: relative;
+  top: -256px;
+  right: -828px;
+}
+/*-----------------------------------
+*  Large Screen 
+----------------------------------*/
